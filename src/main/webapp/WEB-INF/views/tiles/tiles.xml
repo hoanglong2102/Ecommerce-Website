@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions> <!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles//layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />
+	</definition>
+
+
+	<definition name="home" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/home.jsp" />
+	</definition>
+	<definition name="user-changepassword"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/changepassword.jsp" />
+	</definition>
+
+	<definition name="user-timkiemuser"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/timkiemuser.jsp" />
+	</definition>
+
+	<definition name="user-users" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/users.jsp" />
+	</definition>
+	<definition name="user-userDetail" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userDetail.jsp" />
+	</definition>
+
+	<definition name="customer-customers"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customer/customers.jsp" />
+	</definition>
+	<definition name="sanpham-sanpham" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/sanpham/sanpham.jsp" />
+	</definition>
+	<definition name="sanpham-themsanpham"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/sanpham/themsanpham.jsp" />
+	</definition>
+	<definition name="sanpham-capnhatsanpham"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/sanpham/capnhatsanpham.jsp" />
+	</definition>
+	<definition name="sanpham-timkiemsanpham"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/sanpham/timkiemsanpham.jsp" />
+	</definition>
+	<definition name="sanpham-chitietsanpham"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/sanpham/chitietsanpham.jsp" />
+	</definition>
+	<definition name="danhmuc-danhmuc" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/danhmuc/danhmuc.jsp" />
+	</definition>
+	<definition name="danhmuc-timkiemdanhmuc"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/danhmuc/timkiemdanhmuc.jsp" />
+	</definition>
+	<definition name="danhmuc-chitietdanhmuc"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/danhmuc/chitietdanhmuc.jsp" />
+	</definition>
+	<definition name="danhmuc-capnhatdanhmuc"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/danhmuc/capnhatdanhmuc.jsp" />
+	</definition>
+	<definition name="danhmuc-themdanhmuc"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/danhmuc/themdanhmuc.jsp" />
+	</definition>
+	<definition name="customer-customerDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customer/customerDetail.jsp" />
+	</definition>
+
+	<definition name="customer-customerViews"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customer/customerViews.jsp" />
+	</definition>
+
+	<definition name="user-userUpdate" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userUpdate.jsp" />
+	</definition>
+
+	<definition name="customer-timkiemcustomer"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customer/timkiemcustomer.jsp" />
+	</definition>
+
+	<definition name="profile" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/profile.jsp" />
+	</definition>
+	<definition name="order-orders" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orders.jsp" />
+	</definition>
+
+	<definition name="order-orderDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orderDetail.jsp" />
+	</definition>
+	<definition name="order-orderdetailupdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orderdetailupdate.jsp" />
+	</definition>
+
+	<definition name="order-searchOrder"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/searchOrder.jsp" />
+	</definition>
+	<definition name="order-searchOrderByDatesAndTime"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/searchOrderByDatesAndTime.jsp" />
+	</definition>
+
+	<definition name="manufacture-manufacture"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manufacturer/manufacturer.jsp" />
+	</definition>
+	<definition name="manufacture-timkiemnhasanxuat"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manufacturer/manufacturerSearch.jsp" />
+	</definition>
+	<definition name="manufacture-chitietnhasanxuat"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manufacturer/manufacturerDetail.jsp" />
+	</definition>
+	<definition name="manufacture-capnhatnhasanxuat"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manufacturer/manufacturerUpdate.jsp" />
+	</definition>
+	<definition name="manufacture-themnhasanxuat"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manufacturer/manufacturerAdd.jsp" />
+	</definition>
+
+</tiles-definitions>
